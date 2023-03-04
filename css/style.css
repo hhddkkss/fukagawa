@@ -1,0 +1,446 @@
+:root {
+  --main-color: #396091;
+  --second-color: #222;
+  --main-bgc: #f5f6f7;
+}
+a {
+  text-decoration: none;
+  color: var(--second-color);
+}
+
+a:hover {
+  color: var(--main-color);
+}
+.btn {
+  border: 2px solid var(--main-color);
+  color: var(--main-color);
+  transition: all 1s;
+}
+.btn:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+* {
+  font-family: "Noto Sans TC", sans-serif;
+}
+.online-store-link::before {
+  content: "|";
+  margin-right: 1rem;
+}
+.nav-link {
+  font-weight: 300;
+}
+.nav-link:hover {
+  color: var(--main-color);
+  cursor: pointer;
+}
+.navbar-nav .nav-link.active {
+  color: var(--main-color);
+}
+.fa-cart-shopping {
+  font-size: 0.9rem;
+  vertical-align: center;
+}
+.fa-envelope {
+  font-size: 0.9rem;
+  vertical-align: center;
+}
+.kv-inner {
+  height: 30vh;
+}
+.kv-inner-text {
+  color: var(--second-color);
+}
+
+.kv-title {
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: 0.2 rem;
+  font-weight: 300;
+}
+
+.kv-inner-text small {
+  font-size: 0.5rem;
+}
+.scroll {
+  margin: 1rem 0;
+  font-size: 0.75rem;
+}
+.scroll p a {
+  color: var(--main-color);
+}
+.top-handtohand {
+  margin: 150px 40px 0 0;
+  background-color: var(--main-bgc);
+}
+.top-handtohand .text p {
+  color: var(--main-color);
+}
+.top-handtohand .wrap .text .btn {
+  width: 150px;
+}
+.top-handtohand .img-wrap {
+  width: 40%;
+}
+.top-handtohand .img-wrap img {
+  width: 100%;
+  object-fit: cover;
+}
+/* 標題後的線 用1px高跟60px的寬來做 */
+.number-wrap .line {
+  display: block;
+  height: 1px;
+  width: 60px;
+  background-color: var(--main-color);
+}
+
+.top-news {
+  padding: 150px;
+}
+
+/* 藍字標題 */
+.news-jp,
+.news-en,
+.news-num {
+  color: var(--main-color);
+}
+.news-jp {
+  letter-spacing: 0;
+  font-size: 14px;
+}
+.news-en {
+  font-size: 12px;
+  /* 字的間距 */
+  letter-spacing: 0.1em;
+  /* wirting-mode /vertical-rl/ vertical-lr/horizontal */
+  writing-mode: vertical-rl;
+  /* writing mode */
+  /* 原本以為可以用rotate */
+}
+
+.top-news-title2 {
+  color: var(--main-color);
+}
+
+.top-news-title2 p:first-child {
+  font-size: 0.5rem;
+}
+
+.top-news-title2 p {
+  font-size: 1rem;
+}
+
+.top-photo .img-wrap {
+  height: 70%;
+  overflow: hidden;
+}
+.top-photo .img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about {
+  padding: 150px 0 0 150px;
+  margin-bottom: 200px;
+}
+.about-bg {
+  background-color: var(--main-bgc);
+}
+.about-inner {
+  padding-left: calc(150px + 30%);
+}
+.about .img-wrap {
+  width: 100%;
+  overflow: hidden;
+}
+.about .img-wrap img {
+  width: 100%;
+  height: 100%;
+}
+.about .top-news-title {
+  margin-top: -50px;
+}
+.about .text-wrap p {
+  font-size: 13px;
+}
+
+.products {
+  height: 100vh;
+  background-color: var(--main-color);
+}
+
+/* 白字標題 */
+.products .top-news-title .news-jp,
+.products .top-news-title .news-en,
+.products .top-news-title .news-num {
+  color: #fff;
+}
+
+.products .line {
+  display: block;
+  height: 1px;
+  width: 60px;
+  background-color: #fff;
+}
+.product .img-wrap {
+  width: 100%;
+  overflow: hidden;
+}
+.products img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.products-text {
+  color: #fff;
+  padding-left: 30px;
+}
+
+.products .btn {
+  width: fit-content;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.products .btn:hover {
+  background-color: #fff;
+  color: var(--main-color);
+}
+
+.banner-line {
+  height: 100vh;
+}
+.banner-line .img-wrap {
+  width: 100%;
+  overflow: hidden;
+}
+.banner-line .row:hover img {
+  transform: scale(1.1);
+  transition: all 1s linear;
+  filter: blur(2px) contrast(2);
+}
+.banner-line .row:hover .text-color {
+  color: var(--main-color);
+}
+.banner-line .row:hover .btn {
+  background-color: var(--main-color);
+  color: #fff;
+}
+.banner-line img {
+  width: 100%;
+  object-fit: cover;
+}
+.banner-line .text {
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+.banner-line .text-color {
+  color: var(--second-color);
+}
+
+.banner {
+  height: 100vh;
+}
+
+.top-shops {
+  margin: 180px 0 200px 240px;
+}
+
+.top-shops .img-wrap {
+  width: 100%;
+  overflow: hidden;
+}
+
+.top-shops .shop-item:hover img {
+  transform: scale(1.1);
+}
+.top-shops .img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 1s;
+}
+.top-shops .btn {
+  margin: 0 0 0 777px;
+}
+
+.case-Study {
+  margin: 250px auto 0;
+  width: 66%;
+  /* min-width: 800px; */
+}
+.case-Study-Inner {
+  position: relative;
+}
+
+.case-Study .text {
+  color: #fff;
+  position: absolute;
+  padding: 60px 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+}
+
+.case-Study-Inner .img-wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.case-Study-Inner:hover img {
+  transform: scale(1.1);
+  filter: blur(3px);
+}
+
+.case-Study-Inner .img-wrap img {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  transition: all 1s;
+}
+.case-Study-Inner .main-inner {
+  font-size: 13px;
+}
+
+.link-box {
+  margin-top: 150px;
+}
+
+.box-wrap {
+  width: 200px;
+  aspect-ratio: 1/1;
+  border: 1px solid var(--main-color);
+  background-color: var(--main-color);
+  margin-top: 30px;
+}
+.box {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.box-wrap:hover .box {
+  background-color: var(--main-color);
+  color: #fff;
+}
+.arrow:after {
+  content: ">";
+  display: block;
+  text-align: center;
+}
+#footer {
+  background-color: #043d78;
+  padding: 2rem;
+  margin: 150px 0 0 0;
+}
+
+#footer ul li a {
+  color: #fff;
+  padding: 0 0 1rem 0;
+}
+#footer .copyright {
+  font-size: 10px;
+}
+.company-info a {
+  writing-mode: vertical-lr;
+  vertical-align: top;
+  color: #fff;
+}
+
+.text-light {
+  font-size: 6;
+}
+
+#footer a:hover {
+  color: rgba(255, 255, 255, 0.61);
+}
+/* 手機版 */
+@media screen and (max-width: 576px) {
+  .online-store-link::before {
+    content: "––––";
+    display: block;
+  }
+  .border-bottom-lg-none {
+    border-bottom: 1px solid var(--second-color);
+  }
+  .top-handtohand .wrap .img-wrap {
+    width: 90%;
+  }
+  .top-handtohand .wrap {
+    flex-direction: column-reverse;
+  }
+  .top-news {
+    padding: 150px 20px;
+  }
+  .top-photo .img-wrap {
+    height: 100%;
+  }
+
+  .about {
+    padding: 150px 0 0 25px;
+  }
+  .about-inner {
+    padding-left: 2rem;
+  }
+  .about .text-wrap {
+    margin: 34px 20px 0 0;
+  }
+
+  .products-text {
+    padding-left: 30px;
+  }
+
+  .products {
+    height: 80vh;
+  }
+  .banner {
+    height: 50vh;
+  }
+
+  .banner .container-fluid {
+    height: 187px;
+  }
+
+  .banner img {
+    object-fit: cover;
+  }
+
+  .top-shops {
+    margin: 100px 20px 100px;
+  }
+  .top-shops .btn {
+    margin: 0 0 0 240px;
+  }
+
+  .case-Study {
+    margin: 180px 20px 0;
+    width: auto;
+  }
+  .case-Study .img-wrap {
+    width: 100%;
+    height: 50vh;
+  }
+  .box-wrap {
+    aspect-ratio: 1.5/1;
+    margin: 20px auto 0;
+  }
+
+  .company-info {
+    width: 100%;
+  }
+}
+
+/* 桌機版 */
+@media screen and (min-width: 1024px) {
+  .top-handtohand {
+    margin: 200px 18.75vh 0 0;
+  }
+  .top-new-item .border-bottom {
+    width: 50%;
+  }
+}
